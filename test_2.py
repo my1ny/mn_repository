@@ -83,8 +83,8 @@ for row in my_list:
     for num in row:
         print(num) """
 
-""" for i in range(10):
-    print(i) """
+for i in range(10):
+    print(i)
 
 """ for char in "Python":
     print(char) """
@@ -145,9 +145,9 @@ while x <= 100:
         print("x is odd", x)
     x += 1 """
 
-x = 1
+""" x = 1
 while x <= 100:
     if x % 7 == 0:
         print(x)
-    x += 1
+    x += 1 """
  

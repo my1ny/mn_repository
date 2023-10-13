@@ -47,8 +47,8 @@ print(type(c)) """
     print(i) """
 """ for i in range(6):
     print(i) """
-""" for i in range(1, 20, 3):
-    print(i) """
+for i in range(1, 20, 3):
+    print(i)
     
 #max, min, sum
 """ a = [3, 4, 5, 9]
@@ -169,11 +169,11 @@ a = input("a 를 입력하세요")
 b = input("b 를 입력하세요")
 calc(a, b) """
 
-def sum_num(num):
+""" def sum_num(num):
     return sum(num)
 nums = []
 
 for i in range(1, 6):
     innum = int(input(f"{i} 번째 숫자 입력: "))
     nums.append(innum)
-print(sum_num(nums))
+print(sum_num(nums)) """
