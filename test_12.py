@@ -145,9 +145,9 @@ import threading as td
     for i in range(50000):
         print(f"Countdown {i}, name : {str_name}\n")
 
-thread1 = td.Thread(target = counter, args = ("1num,"))
-thread2 = td.Thread(target = counter, args = ("2num,"))
-thread3 = td.Thread(target = counter, args = ("3num,"))
+thread1 = td.Thread(target = counter, args = ("1num",))
+thread2 = td.Thread(target = counter, args = ("2num",))
+thread3 = td.Thread(target = counter, args = ("3num",))
 
 start = time.time()
 thread1.start()
@@ -168,24 +168,25 @@ import multiprocessing as mp
     for i in range(50000):
         print(f"Countdown {i}, name : {str_name}\n")
 
-process1 = mp.Process(target=counter, args=("1num,"))
-process2 = mp.Process(target=counter, args=("2num,"))
-process3 = mp.Process(target=counter, args=("3num,"))
+if __name__ == "__main__":
+    process1 = mp.Process(target=counter, args=("1num",))
+    process2 = mp.Process(target=counter, args=("2num",))
+    process3 = mp.Process(target=counter, args=("3num",))
 
-start = time.time()
-process1.start()
-process2.start()
-process3.start()
+    start = time.time()
+    process1.start()
+    process2.start()
+    process3.start()
 
-process1.join()
-process2.join()
-process3.join()
-end = time.time()
+    process1.join()
+    process2.join()
+    process3.join()
+    end = time.time()
 
-print("proc-end", end - start) """
+    print("proc-end", end - start) """
 
 #main 실행
-def main() :
+""" def main() :
     print("hello world")
 
 def run() :
@@ -193,5 +194,5 @@ def run() :
 
 if __name__ == "__main__":
     run()
-    #main()
+    #main() """
 
